@@ -27,7 +27,7 @@ function App() {
 
   return (
     <>
-      <div id="main" className="app smooth transition" js-app js-transition>
+      <div id="main" className="app smooth transition">
         <div className="preloader" js-preload></div>
         <div className="smooth__track">
           <Header />
