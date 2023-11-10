@@ -1057,7 +1057,7 @@ export default function Header() {
           </div>
         </section>
       </div>
-      <div className="app-outside js-app-outside"></div>
+      {/* <div className="app-outside js-app-outside"></div> */}
     </>
   );
 }
