@@ -168,7 +168,7 @@ function CyrcularCaroucel() {
                     </div>
                     <div className="product-tag__btn">
                       <a
-                        href="/en/products/beluga"
+                        href="/product/1"
                         className="btn btn--alt btn--fixed btn--large js-roulette-product-btn"
                         data-index="0"
                       >

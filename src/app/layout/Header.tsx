@@ -78,7 +78,6 @@ export default function Header() {
                 </button>
                 <button className="s-header__close-btn js-header-close-btn">
                   <span className="cross">
-                    {" "}
                     <span></span>
                     <span></span>{" "}
                   </span>
@@ -202,7 +201,7 @@ export default function Header() {
                       onPointerOver={(e) => ActiveMenuHandler(e)}
                       onPointerLeave={MenuLeaveHandler}
                     >
-                      <a href="/en#shop" className="top-level no-transition">
+                      <a href="#" className="top-level no-transition">
                         <span>Shop</span>
                       </a>
 
@@ -333,7 +332,7 @@ export default function Header() {
                       onPointerOver={(e) => ActiveMenuHandler(e)}
                       onPointerLeave={MenuLeaveHandler}
                     >
-                      <a href="/en#" className="top-level no-transition">
+                      <a href="#" className="top-level no-transition">
                         <span>Explore</span>
                       </a>
 
@@ -451,7 +450,7 @@ export default function Header() {
                       onPointerOver={(e) => ActiveMenuHandler(e)}
                       onPointerLeave={MenuLeaveHandler}
                     >
-                      <a href="/en#" className="top-level no-transition">
+                      <a href="#" className="top-level no-transition">
                         <span>Articles</span>
                       </a>
 

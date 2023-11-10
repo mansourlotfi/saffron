@@ -80,7 +80,7 @@ export default function FooterContent() {
                   <div className="text-zero flex-shrink-0 w-1/2 lg:w-full">
                     <ul className="s-footer__menu">
                       <li>
-                        <a href="/en#shop" className="s-footer__link">
+                        <a href="/" className="s-footer__link">
                           <span>Shop</span>
                         </a>
                       </li>
