@@ -55,6 +55,26 @@ export default function Header() {
     document.body.classList.remove("has-cart-overlay");
   }, []);
 
+  const burgerMenuOpenHandler = useCallback(() => {
+    var x = document.getElementsByClassName("s-header");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].className += " is-open"; // WITH space added
+    }
+    document.body.classList.add("has-overlay");
+    // document.body.classList.add("has-cart-overlay");
+  }, []);
+
+  const burgerMenuCloseHandler = useCallback(() => {
+    var x = document.getElementsByClassName("s-header");
+    var i;
+    for (i = 0; i < x.length; i++) {
+      x[i].classList.remove("is-open"); // WITH space added
+    }
+    document.body.classList.remove("has-overlay");
+    // document.body.classList.remove("has-cart-overlay");
+  }, []);
+
   return (
     <>
       <div id="shopify-section-header" className="shopify-section">
@@ -69,17 +89,23 @@ export default function Header() {
           <div className="s-header__inner">
             <div className="flex items-center justify-between h-full z-header-btn">
               <div className="w-1/4 lg:hidden">
-                <button className="s-header__menu-btn js-header-menu-btn">
+                <button
+                  className="s-header__menu-btn js-header-menu-btn"
+                  onClick={burgerMenuOpenHandler}
+                >
                   <span className="burger">
                     <span></span>
                     <span></span>
                     <span></span>
                   </span>
                 </button>
-                <button className="s-header__close-btn js-header-close-btn">
+                <button
+                  className="s-header__close-btn js-header-close-btn"
+                  onClick={burgerMenuCloseHandler}
+                >
                   <span className="cross">
                     <span></span>
-                    <span></span>{" "}
+                    <span></span>
                   </span>
                 </button>
               </div>
@@ -790,7 +816,7 @@ export default function Header() {
                 <div className="submenu">
                   <ul className="submenu__inner">
                     <li className="submenu__item">
-                      <a className="submenu__card" href="/en/products/beluga">
+                      <a className="submenu__card" href="/product/1">
                         <div className="submenu__picture">
                           <div
                             className="cover lazy blur"
@@ -817,7 +843,7 @@ export default function Header() {
                     </li>
 
                     <li className="submenu__item">
-                      <a className="submenu__card" href="/en/products/oscietre">
+                      <a className="submenu__card" href="/product/1">
                         <div className="submenu__picture">
                           <div
                             className="cover lazy blur"
@@ -844,7 +870,7 @@ export default function Header() {
                     </li>
 
                     <li className="submenu__item">
-                      <a className="submenu__card" href="/en/products/sevruga">
+                      <a className="submenu__card" href="/product/1">
                         <div className="submenu__picture">
                           <div
                             className="cover lazy blur"
@@ -871,7 +897,7 @@ export default function Header() {
                     </li>
 
                     <li className="submenu__item">
-                      <a className="submenu__card" href="/en/products/baeri">
+                      <a className="submenu__card" href="/product/1">
                         <div className="submenu__picture">
                           <div
                             className="cover lazy blur"
