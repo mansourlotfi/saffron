@@ -18,7 +18,7 @@ export default function FooterContent() {
               </a>
             </div>
 
-            <div className="s-footer__image">
+            {/* <div className="s-footer__image">
               <img
                 className="opacity-0 lazy lazyload"
                 src="//monarq.ch/cdn/shop/files/footer_75x102_crop_center.progressive.jpg?v=1614311954 750w, //monarq.ch/cdn/shop/files/footer_140x.progressive.jpg?v=1614311954 1024w, //monarq.ch/cdn/shop/files/footer_288x.progressive.jpg?v=1614311954 1440w"
@@ -28,7 +28,7 @@ export default function FooterContent() {
                 data-style="transform: scale(<%= it.ratio(it.i, -0.5, 1.5, 1, 1.2) %>);"
                 src="//monarq.ch/cdn/shop/files/footer_750x1018_crop_center.progressive.jpg?v=1614311954 750w, //monarq.ch/cdn/shop/files/footer_1400x.progressive.jpg?v=1614311954 1024w, //monarq.ch/cdn/shop/files/footer_2880x.progressive.jpg?v=1614311954 1440w"
               />
-            </div>
+            </div> */}
           </div>
 
           <div className="s-footer__foot wrapper">
