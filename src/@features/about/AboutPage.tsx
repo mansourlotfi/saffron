@@ -27,13 +27,19 @@ function AboutPage() {
                   <div
                     className="bg hidden md:block xl:hidden lazy lazyload js-preload"
                     data-instant
-                    data-bg="//monarq.ch/cdn/shop/files/bg-medium_1_2048x.progressive.jpg?v=1614258634"
+                    style={{
+                      backgroundImage:
+                        "url('//monarq.ch/cdn/shop/files/bg-medium_1_2048x.progressive.jpg?v=1614258634')",
+                    }}
                   ></div>
 
                   <div
                     className="bg hidden xl:block lazy lazyload js-preload"
                     data-instant
-                    data-bg="//monarq.ch/cdn/shop/files/bg-large_1_2880x.progressive.jpg?v=1614258740"
+                    style={{
+                      backgroundImage:
+                        "url('//monarq.ch/cdn/shop/files/bg-medium_1_2048x.progressive.jpg?v=1614258634')",
+                    }}
                   ></div>
                 </div>
               </div>
@@ -44,8 +50,8 @@ function AboutPage() {
                 data-style="transform: translate3d(0, <%= it.ratio(it.i, -0.2, 1.2, -60, 60) %>px, 0);"
               >
                 <img
-                  className="cover lazy lazyload transition"
-                  src="https://monarq.ch/cdn/shop/files/bg-medium_1_2048x.progressive.jpg?v=1614258634"
+                  className="cover lazy lazyload"
+                  src="https://monarq.ch/cdn/shop/files/monarq_1_a873e64d-3487-4f7c-8515-0462412df508_3000x.png?v=1632154175"
                 />
               </div>
             </div>
@@ -79,13 +85,13 @@ function AboutPage() {
             <div className="schema">
               <div className="md:hidden">
                 <img
-                  className="lazy lazyload transition"
+                  className="lazy lazyload"
                   src="//monarq.ch/cdn/shop/files/monarq_1_a873e64d-3487-4f7c-8515-0462412df508_900x.png?v=1632154175 750w, //monarq.ch/cdn/shop/files/monarq_1_a873e64d-3487-4f7c-8515-0462412df508_2000x.png?v=1632154175 1000w, //monarq.ch/cdn/shop/files/monarq_1_a873e64d-3487-4f7c-8515-0462412df508_3000x.png?v=1632154175 1500w"
                 />
               </div>
               <div className="hidden md:block xl:hidden">
                 <img
-                  className="lazy lazyload transition"
+                  className="lazy lazyload"
                   src="//monarq.ch/cdn/shop/files/map-medium_2000x.jpg?v=1614317377 1000w"
                 />
               </div>
@@ -115,7 +121,7 @@ function AboutPage() {
                 data-style="transform: translate3d(0, <%= it.ratio(it.i, .5, 1.5, -40, 40) %>px, 0);"
               >
                 <img
-                  className="cover lazy lazyload transition"
+                  className="cover lazy lazyload"
                   src="//monarq.ch/cdn/shop/files/esturgeon_900x.png?v=1635786193 750w, //monarq.ch/cdn/shop/files/esturgeon_2000x.png?v=1635786193 1000w, //monarq.ch/cdn/shop/files/esturgeon_3000x.png?v=1635786193 1500w"
                 />
               </div>
