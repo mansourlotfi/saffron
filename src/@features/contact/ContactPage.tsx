@@ -1,5 +1,3 @@
-import React from "react";
-
 function ContactPage() {
   var scrollpos = window.scrollY;
   var x = document.getElementsByClassName("s-header");

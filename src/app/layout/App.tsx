@@ -3,10 +3,10 @@ import Header from "./Header";
 // import LoadingComponent from "./LoadingComponent";
 // import { useAppDispatch } from "../store/configureStore";
 // import { fetchBasketAsync } from "../../features/basket/basketSlice";
-import HomePage from "../../features/home/HomePage";
+import HomePage from "@features/home/HomePage";
 // import FloatingNav from "./floating-nav/FloatingNav";
 import Footer from "./footer/FooterContent";
-import "../../styles.css";
+import "./styles.css";
 
 function App() {
   const location = useLocation();
