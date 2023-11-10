@@ -35,7 +35,7 @@ function Arguments() {
                       any time of the year.
                     </p>
 
-                    <a className="card-push__link link" href="/en/pages/adn">
+                    <a className="card-push__link link" href="/dna">
                       Learn more
                     </a>
                   </div>
@@ -67,10 +67,7 @@ function Arguments() {
                       industry.
                     </p>
 
-                    <a
-                      className="card-push__link link"
-                      href="/en/pages/a-propos"
-                    >
+                    <a className="card-push__link link" href="/about">
                       Learn more
                     </a>
                   </div>

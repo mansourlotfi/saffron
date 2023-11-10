@@ -21,12 +21,12 @@ export default function FooterContent() {
             <div className="s-footer__image">
               <img
                 className="opacity-0 lazy lazyload"
-                data-srcset="//monarq.ch/cdn/shop/files/footer_75x102_crop_center.progressive.jpg?v=1614311954 750w, //monarq.ch/cdn/shop/files/footer_140x.progressive.jpg?v=1614311954 1024w, //monarq.ch/cdn/shop/files/footer_288x.progressive.jpg?v=1614311954 1440w"
+                src="//monarq.ch/cdn/shop/files/footer_75x102_crop_center.progressive.jpg?v=1614311954 750w, //monarq.ch/cdn/shop/files/footer_140x.progressive.jpg?v=1614311954 1024w, //monarq.ch/cdn/shop/files/footer_288x.progressive.jpg?v=1614311954 1440w"
               />
               <img
                 className="absolute top-0 lazy lazyload transition trigger js-app-style"
                 data-style="transform: scale(<%= it.ratio(it.i, -0.5, 1.5, 1, 1.2) %>);"
-                data-srcset="//monarq.ch/cdn/shop/files/footer_750x1018_crop_center.progressive.jpg?v=1614311954 750w, //monarq.ch/cdn/shop/files/footer_1400x.progressive.jpg?v=1614311954 1024w, //monarq.ch/cdn/shop/files/footer_2880x.progressive.jpg?v=1614311954 1440w"
+                src="//monarq.ch/cdn/shop/files/footer_750x1018_crop_center.progressive.jpg?v=1614311954 750w, //monarq.ch/cdn/shop/files/footer_1400x.progressive.jpg?v=1614311954 1024w, //monarq.ch/cdn/shop/files/footer_2880x.progressive.jpg?v=1614311954 1440w"
               />
             </div>
           </div>
@@ -86,43 +86,31 @@ export default function FooterContent() {
                       </li>
 
                       <li>
-                        <a href="/en/pages/adn" className="s-footer__link">
+                        <a href="/dna" className="s-footer__link">
                           <span>DNA</span>
                         </a>
                       </li>
 
                       <li>
-                        <a href="/en/pages/a-propos" className="s-footer__link">
+                        <a href="/about" className="s-footer__link">
                           <span>About Us</span>
                         </a>
                       </li>
 
                       <li>
-                        <a href="/en#" className="s-footer__link">
-                          <span>FAQs</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="/en/pages/contact" className="s-footer__link">
+                        <a href="/contact" className="s-footer__link">
                           <span>Contact</span>
                         </a>
                       </li>
 
                       <li>
-                        <a
-                          href="/en/policies/terms-of-service"
-                          className="s-footer__link"
-                        >
+                        <a href="/terms-of-service" className="s-footer__link">
                           <span>Terms of Service</span>
                         </a>
                       </li>
 
                       <li>
-                        <a
-                          href="/en/policies/refund-policy"
-                          className="s-footer__link"
-                        >
+                        <a href="/refund-policy" className="s-footer__link">
                           <span>Refund policy</span>
                         </a>
                       </li>
@@ -132,7 +120,7 @@ export default function FooterContent() {
                     <ul className="s-footer__menu">
                       <li>
                         <a
-                          href="/en/policies/terms-of-service"
+                          href="/terms-of-service"
                           className="s-footer__link s-footer__link--alt"
                         >
                           <span>General Conditions of Sale</span>
@@ -141,7 +129,7 @@ export default function FooterContent() {
 
                       <li>
                         <a
-                          href="/en/policies/privacy-policy"
+                          href="/privacy-policy"
                           className="s-footer__link s-footer__link--alt"
                         >
                           <span>Privacy</span>

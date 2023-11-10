@@ -375,7 +375,7 @@ export default function Header() {
                           style={{ background: activeMenu === 2 ? "#fff" : "" }}
                         >
                           <li className="submenu__item">
-                            <a className="submenu__card" href="/en/pages/adn">
+                            <a className="submenu__card" href="/dna">
                               <div className="submenu__picture">
                                 {/* <!-- type: page_link --> */}
                                 <div
@@ -395,10 +395,7 @@ export default function Header() {
                           </li>
 
                           <li className="submenu__item">
-                            <a
-                              className="submenu__card"
-                              href="/en/pages/a-propos"
-                            >
+                            <a className="submenu__card" href="/about">
                               <div className="submenu__picture">
                                 {/* <!-- type: page_link --> */}
                                 <div
@@ -515,10 +512,7 @@ export default function Header() {
                           </li>
 
                           <li className="submenu__item">
-                            <a
-                              className="submenu__card"
-                              href="/en/blogs/articles/test"
-                            >
+                            <a className="submenu__card" href="/articles">
                               <div className="submenu__picture">
                                 {/* <!-- type: article_link --> */}
 
@@ -541,10 +535,7 @@ export default function Header() {
                           </li>
 
                           <li className="submenu__item">
-                            <a
-                              className="submenu__card"
-                              href="/en/blogs/articles/fera-du-lac-leman-et-caviar-monarq-sevruga"
-                            >
+                            <a className="submenu__card" href="/articles">
                               <div className="submenu__picture">
                                 {/* <!-- type: article_link --> */}
 
@@ -567,10 +558,7 @@ export default function Header() {
                           </li>
 
                           <li className="submenu__item">
-                            <a
-                              className="submenu__card"
-                              href="/en/blogs/articles"
-                            >
+                            <a className="submenu__card" href="/articles">
                               <div className="submenu__picture">
                                 {/* <!-- type: blog_link --> */}
 
@@ -927,31 +915,25 @@ export default function Header() {
 
                 <ul className="s-header__mobile-menu">
                   <li className="">
-                    <a href="/en/pages/adn">
+                    <a href="/dna">
                       <span>DNA</span>
                     </a>
                   </li>
 
                   <li className="">
-                    <a href="/en/pages/a-propos">
+                    <a href="/about">
                       <span>About Us</span>
                     </a>
                   </li>
 
                   <li className="">
-                    <a href="/en/pages/contact">
+                    <a href="/contact">
                       <span>Contact</span>
                     </a>
                   </li>
 
                   <li className="">
-                    <a href="http://support.monarq.ch/fr/">
-                      <span>FAQs</span>
-                    </a>
-                  </li>
-
-                  <li className="">
-                    <a href="/en/blogs/articles">
+                    <a href="/articles">
                       <span>Articles</span>
                     </a>
                   </li>
