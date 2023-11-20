@@ -1307,7 +1307,7 @@ body .intercom-lightweight-app {
     transform-origin: 100% 100%;
   }
   .smooth .intro__icon {
-    opacity: 0;
+    opacity: 1;
   }
   .smooth .shopify-section.in-view .intro__icon {
     opacity: 1;
@@ -1316,6 +1316,15 @@ body .intercom-lightweight-app {
   .transition-out .intro__icon {
     opacity: 0;
     transition: opacity 0.8s linear;
+  }
+}
+
+@keyframes smoothIntroAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 

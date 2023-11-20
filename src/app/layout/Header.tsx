@@ -1,7 +1,9 @@
 import { useCallback, useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  const { t, i18n } = useTranslation();
   // const theme = useTheme();
 
   // const { basket } = useAppSelector((state) => state.basket);
@@ -73,6 +75,16 @@ export default function Header() {
     }
     document.body.classList.remove("has-overlay");
     // document.body.classList.remove("has-cart-overlay");
+  }, []);
+
+  const languageMenuOpenHandler = useCallback(() => {
+    var x = document.getElementById("LanguageList");
+    x?.removeAttribute("hidden");
+  }, []);
+
+  const languageMenuCloseHandler = useCallback(() => {
+    var x = document.getElementById("LanguageList");
+    x?.setAttribute("hidden", "true");
   }, []);
 
   return (
@@ -228,7 +240,7 @@ export default function Header() {
                       onPointerLeave={MenuLeaveHandler}
                     >
                       <a href="#" className="top-level no-transition">
-                        <span>Shop</span>
+                        <span>{t("shop")}</span>
                       </a>
 
                       <div
@@ -359,7 +371,7 @@ export default function Header() {
                       onPointerLeave={MenuLeaveHandler}
                     >
                       <a href="#" className="top-level no-transition">
-                        <span>Explore</span>
+                        <span> {t("explore")}</span>
                       </a>
 
                       <div
@@ -474,7 +486,7 @@ export default function Header() {
                       onPointerLeave={MenuLeaveHandler}
                     >
                       <a href="#" className="top-level no-transition">
-                        <span>Articles</span>
+                        <span>{t("articles")}</span>
                       </a>
 
                       <div
@@ -614,8 +626,9 @@ export default function Header() {
                         js-language-switcher-btn
                         aria-expanded="false"
                         aria-controls="LanguageList"
+                        onClick={languageMenuOpenHandler}
                       >
-                        EN
+                        {t("language")}
                         <span className="arrow ml-4">
                           <svg
                             width="14"
@@ -635,6 +648,7 @@ export default function Header() {
                         js-language-switcher-panel
                         className="disclosure__list"
                         hidden
+                        onClick={languageMenuCloseHandler}
                       >
                         <li
                           className="disclosure__item"
@@ -647,8 +661,9 @@ export default function Header() {
                             hrefLang="fr"
                             lang="fr"
                             data-value="fr"
+                            onClick={() => i18n.changeLanguage("ch")}
                           >
-                            FR
+                            {t("chLang")}
                           </a>
                         </li>
 
@@ -663,8 +678,9 @@ export default function Header() {
                             hrefLang="de"
                             lang="de"
                             data-value="de"
+                            onClick={() => i18n.changeLanguage("en")}
                           >
-                            DE
+                            {t("enlang")}
                           </a>
                         </li>
                       </ul>
